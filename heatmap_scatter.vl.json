@@ -1,0 +1,72 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue254;\red144\green1\blue18;
+\red9\green60\blue148;\red19\green120\blue72;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99608;\cssrgb\c63922\c8235\c8235;
+\cssrgb\c1569\c31765\c64706;\cssrgb\c3529\c53333\c35294;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \{\cb1 \
+\cb3   \cf4 \strokec4 "$schema"\cf2 \strokec2 : \cf5 \strokec5 "https://vega.github.io/schema/vega-lite/v3.json"\cf2 \strokec2 ,\cb1 \
+\cb3   \cf4 \strokec4 "data"\cf2 \strokec2 : \{\cb1 \
+\cb3     \cf4 \strokec4 "url"\cf2 \strokec2 : \cf5 \strokec5 "https://raw.githubusercontent.com/colmr/vis_class/master/London2012Vega.csv"\cf2 \strokec2 ,\cb1 \
+\cb3     \cf4 \strokec4 "format"\cf2 \strokec2 : \{\cb1 \
+\cb3       \cf4 \strokec4 "type"\cf2 \strokec2 : \cf5 \strokec5 "csv"\cf2 \cb1 \strokec2 \
+\cb3     \}\cb1 \
+\cb3   \},\cb1 \
+\cb3   \cf4 \strokec4 "transform"\cf2 \strokec2 : [\cb1 \
+\cb3     \{\cb1 \
+\cb3       \cf4 \strokec4 "filter"\cf2 \strokec2 : \cf5 \strokec5 "datum.Weight > 0"\cf2 \cb1 \strokec2 \
+\cb3     \},\cb1 \
+\cb3     \{\cb1 \
+\cb3       \cf4 \strokec4 "filter"\cf2 \strokec2 : \cf5 \strokec5 "datum.Height > 0"\cf2 \cb1 \strokec2 \
+\cb3     \},\cb1 \
+\cb3     \{\cb1 \
+\cb3       \cf4 \strokec4 "filter"\cf2 \strokec2 : \cf5 \strokec5 "datum.Weight < 200"\cf2 \cb1 \strokec2 \
+\cb3     \}\cb1 \
+\cb3   ],\cb1 \
+\cb3   \cf4 \strokec4 "title"\cf2 \strokec2 : \{\cb1 \
+\cb3       \cf4 \strokec4 "text"\cf2 \strokec2 : \cf5 \strokec5 "Olympic Athletes - Height vs Weight"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "anchor"\cf2 \strokec2 : \cf5 \strokec5 "middle"\cf2 \cb1 \strokec2 \
+\cb3   \},\cb1 \
+\cb3   \cf4 \strokec4 "width"\cf2 \strokec2 :\cf6 \strokec6 500\cf2 \strokec2 ,\cb1 \
+\cb3   \cf4 \strokec4 "height"\cf2 \strokec2 :\cf6 \strokec6 500\cf2 \strokec2 ,\cb1 \
+\cb3   \cf4 \strokec4 "mark"\cf2 \strokec2 :\cf5 \strokec5 "rect"\cf2 \strokec2 ,\cb1 \
+\cb3   \cf4 \strokec4 "encoding"\cf2 \strokec2 : \{\cb1 \
+\cb3     \cf4 \strokec4 "y"\cf2 \strokec2 :\{\cb1 \
+\cb3       \cf4 \strokec4 "field"\cf2 \strokec2 : \cf5 \strokec5 "Height"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "type"\cf2 \strokec2 : \cf5 \strokec5 "quantitative"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "bin"\cf2 \strokec2 :\{\cb1 \
+\cb3         \cf4 \strokec4 "maxbins"\cf2 \strokec2 :\cf6 \strokec6 100\cf2 \cb1 \strokec2 \
+\cb3         \},\cb1 \
+\cb3       \cf4 \strokec4 "scale"\cf2 \strokec2 :\{\cb1 \
+\cb3         \cf4 \strokec4 "zero"\cf2 \strokec2 : \cf5 \strokec5 false\cf2 \cb1 \strokec2 \
+\cb3       \}\cb1 \
+\cb3     \},\cb1 \
+\cb3     \cf4 \strokec4 "x"\cf2 \strokec2 :\{\cb1 \
+\cb3       \cf4 \strokec4 "field"\cf2 \strokec2 : \cf5 \strokec5 "Weight"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "type"\cf2 \strokec2 :\cf5 \strokec5 "quantitative"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "bin"\cf2 \strokec2 :\{\cb1 \
+\cb3         \cf4 \strokec4 "maxbins"\cf2 \strokec2 :\cf6 \strokec6 100\cf2 \cb1 \strokec2 \
+\cb3         \},\cb1 \
+\cb3       \cf4 \strokec4 "scale"\cf2 \strokec2 :\{\cb1 \
+\cb3         \cf4 \strokec4 "zero"\cf2 \strokec2 : \cf5 \strokec5 false\cf2 \cb1 \strokec2 \
+\cb3       \}\cb1 \
+\cb3     \},\cb1 \
+\cb3     \cf4 \strokec4 "color"\cf2 \strokec2 : \{\cb1 \
+\cb3       \cf4 \strokec4 "aggregate"\cf2 \strokec2 : \cf5 \strokec5 "count"\cf2 \strokec2 ,\cb1 \
+\cb3       \cf4 \strokec4 "type"\cf2 \strokec2 : \cf5 \strokec5 "quantitative"\cf2 \cb1 \strokec2 \
+\cb3     \}\cb1 \
+\cb3   \},\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb3 \strokec4 "config"\cf2 \strokec2 : \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3     \cf4 \strokec4 "legend"\cf2 \strokec2 : \{\cb1 \
+\cb3       \cf4 \strokec4 "orient"\cf2 \strokec2 :\cf5 \strokec5 "bottom-right"\cf2 \cb1 \strokec2 \
+\cb3     \}\cb1 \
+\cb3   \}\cb1 \
+\cb3 \}\cb1 \
+}

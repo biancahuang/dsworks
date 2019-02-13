@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/colmr/vis_class/master/London2012Vega.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Weight > 0"
+    },
+    {
+      "filter": "datum.Height > 0"
+    }
+
+  ],
+  "name":"Age vs Countries",
+  "description":"Here are the 2 graphs of distribution of male and female players' age over different countries. ",
+  
+  "mark": "tick",
+  "encoding": {
+    "x": {
+      "field": "Age",
+      "type": "quantitative"
+
+    },
+    "y": {
+      "field":"Country",
+      "type": "nominal"
+    },
+    "color":{
+        "field":"Sex",
+        "type":"nominal",
+        "scale": {"range": ["#EA98D9","#650CCA"]}
+    },
+    "column":{"field":"Sex","type":"nominal"}
+  }
+
+}
